@@ -1,7 +1,9 @@
 const express = require("express");
 const phones = require("./phones.json");
-
+const cors = require("cors");
 const app = express();
+
+app.use(cors());
 
 const port = 3000;
 
